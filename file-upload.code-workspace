@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "name": "✨ file-upload",
+      "path": ".",
+    },
+    {
+      "name": "📦 @file-upload/eslint-config",
+      "path": "packages/eslint-config",
+    },
+    {
+      "name": "📦 @file-upload/typescript-config",
+      "path": "packages/typescript-config",
+    },
+  ],
+  "settings": {},
+}
