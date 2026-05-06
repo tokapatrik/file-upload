@@ -2,16 +2,51 @@
   "folders": [
     {
       "name": "✨ file-upload",
-      "path": ".",
+      "path": "."
+    },
+    {
+      "name": "🚀 @file-upload/api",
+      "path": "apps/api"
     },
     {
       "name": "📦 @file-upload/eslint-config",
-      "path": "packages/eslint-config",
+      "path": "packages/eslint-config"
     },
     {
       "name": "📦 @file-upload/typescript-config",
-      "path": "packages/typescript-config",
-    },
+      "path": "packages/typescript-config"
+    }
   ],
-  "settings": {},
+  "settings": {
+    // Eslint configuration
+    "eslint.useFlatConfig": true,
+    "eslint.workingDirectories": [
+      {
+        "mode": "auto"
+      }
+    ],
+
+    // Formatting and code actions on save
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+    // TypeScript
+    "js/ts.tsdk.path": "node_modules/typescript/lib",
+    "js/ts.tsdk.promptToUseWorkspaceVersion": true,
+
+    // Hide generated files and common build directories from search and file watching
+    "search.exclude": {
+      "**/.turbo": true,
+      "**/dist": true,
+      "**/node_modules": true,
+      "**/.next": true,
+      "**/routeTree.gen.ts": true
+    }
+  },
+  "extensions": {
+    "recommendations": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+  }
 }
