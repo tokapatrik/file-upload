@@ -1,12 +1,13 @@
 {
   "name": "file-upload",
+  "type": "module",
   "private": true,
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "turbo format",
-    "format:fix": "prettier --write .",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-format": "prettier \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
