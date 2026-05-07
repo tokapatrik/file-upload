@@ -7,5 +7,3 @@ import { DatabaseModule } from './database/database.module';
   imports: [ConfigModule, DatabaseModule]
 })
 export class AppModule {}
-
-//asdasdasd
