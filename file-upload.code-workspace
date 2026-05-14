@@ -17,6 +17,10 @@
       "path": "packages/eslint-config"
     },
     {
+      "name": "📦 @file-upload/shared-types",
+      "path": "packages/shared-types"
+    },
+    {
       "name": "📦 @file-upload/typescript-config",
       "path": "packages/typescript-config"
     }

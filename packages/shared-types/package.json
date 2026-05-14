@@ -1,0 +1,19 @@
+{
+  "name": "@file-upload/shared-types",
+  "type": "module",
+  "exports": {
+    "./guard-duty": {
+      "types": "./dist/guard-duty/types.d.ts",
+      "import": "./dist/guard-duty/types.js",
+      "default": "./dist/guard-duty/types.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch --preserveWatchOutput"
+  },
+  "devDependencies": {
+    "@file-upload/typescript-config": "workspace:*",
+    "typescript": "^6.0.3"
+  }
+}
