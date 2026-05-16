@@ -9,10 +9,6 @@
       "path": "apps/api"
     },
     {
-      "name": "🚀 @file-upload/infra",
-      "path": "apps/infra"
-    },
-    {
       "name": "📦 @file-upload/eslint-config",
       "path": "packages/eslint-config"
     },

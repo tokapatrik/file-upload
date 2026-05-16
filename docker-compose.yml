@@ -22,21 +22,6 @@ services:
     ports:
       - 8080:8080
 
-  localstack:
-    container_name: localstack
-    image: localstack/localstack:latest
-    ports:
-      - '127.0.0.1:4566:4566'
-      - '127.0.0.1:4510-4559:4510-4559'
-    environment:
-      LOCALSTACK_AUTH_TOKEN: ${LOCALSTACK_AUTH_TOKEN}
-      AWS_DEFAULT_REGION: eu-central-1
-    volumes:
-      - localstack-data:/var/lib/localstack
-      - /var/run/docker.sock:/var/run/docker.sock
-
 volumes:
   db:
-    driver: local
-  localstack-data:
     driver: local
