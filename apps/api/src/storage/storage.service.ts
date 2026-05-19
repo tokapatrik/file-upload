@@ -1,12 +1,5 @@
-import {
-  CreatePresignedUploadUrlParams,
-  PresignedUploadUrl
-} from './interfaces/presigned-upload-url.interface';
+import { CreatePresignedUploadUrlParams } from './interfaces/presigned-upload-url.interface';
 
 export abstract class StorageService {
-  abstract createPresignedUrl(params: CreatePresignedUploadUrlParams): Promise<PresignedUploadUrl>;
-
-  abstract createPresignedUrls(
-    params: CreatePresignedUploadUrlParams[]
-  ): Promise<PresignedUploadUrl[]>;
+  abstract createPresignedUrl(params: CreatePresignedUploadUrlParams): Promise<string>;
 }
