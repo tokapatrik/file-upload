@@ -23,5 +23,6 @@ export const envValidationSchema = joi.object({
     then: joi.string().required(),
     otherwise: joi.string().optional()
   }),
-  AWS_UPLOAD_SQS_QUEUE_URL: joi.string().uri()
+  AWS_UPLOAD_SQS_QUEUE_URL: joi.string().uri().required(),
+  AWS_S3_UPLOAD_BUCKET_NAME: joi.string().required()
 });
